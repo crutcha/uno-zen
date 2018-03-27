@@ -68,7 +68,8 @@ body[data-page=error]>article {
 .navigation.left .links>li.expanded:hover,
 .navigation.left .links>li>a:hover,
 .navigation.right .social.item a:hover {
-    opacity: 1
+    opacity: 1;
+    background: #f8f8f8;
 }
 
 .navigation.left .links>li.expanded {
@@ -2177,7 +2178,12 @@ pre {
 .navigation.left .links>li.expanded {
     display: inline-block;
     margin: 0 5px;
-    border-radius: 20px
+    border-radius: 20px;
+    background: rgba(32, 46, 46, .7)
+}
+
+.naviation.left .links>li.expanded:hover {
+    background: #f8f8f8;
 }
 
 .navigation.left .links>li.expanded>a {
