@@ -3,7 +3,7 @@
     //border-bottom: 1px dashed #ea6153; //kinda ugly
     line-height: 25px;
     transition: all .5s;
-    padding: .1rem .25rem
+    //padding: .1rem .25rem // messing with post description
 }
 
 #post-content a:hover:not(.title-link),
@@ -387,7 +387,8 @@ ul {
 main {
     bottom: 0;
     left: 22.5rem;
-    padding: 2rem 3rem;
+    //padding: 2rem 3rem;
+    padding: 0rem 1rem;
     position: absolute;
     right: 0;
     top: 0
@@ -395,7 +396,7 @@ main {
 
 main>.content {
     margin: 0 3.7rem;
-    padding: 2rem 0
+    //padding: 2rem 0 //too much whitespace
 }
 
 main>.content>h1 {
@@ -2284,7 +2285,7 @@ body[data-page=error] {
 }
 
 #posts-list>li {
-    margin-left: 1rem;
+    //margin-left: 1rem; //causing misalignemtn with footer
     margin-bottom: 1.25rem
 }
 
@@ -2655,5 +2656,23 @@ body[data-page=error] {
 }
 
 .blog-title {
-    font-size: 1.2rem
+    font-size: 1.7rem
 }
+
+.post.description {
+    margin-bottom: 1rem;
+    font-size: .9em;
+    color: #999
+}
+
+.posts>li>a>h2 {
+    margin-bottom: 1rem;
+    line-height: 3rem;
+    -webkit-transition: all 350ms;
+    transition: all 350ms;
+}
+
+.posts>li>a>h2:first-child {
+    martin-top: 0;
+}
+
