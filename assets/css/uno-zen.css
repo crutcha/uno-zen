@@ -24,6 +24,10 @@
     margin: .8rem 0
 }
 
+#posts-list>li>a>h2:hover {
+    color: red
+}
+
 .cover.container,
 body[data-page=error] {
     background: linear-gradient(150deg, rgba(95, 44, 130, .1) 30%, rgba(73, 160, 157, .2) 70%) 0 0/cover fixed
