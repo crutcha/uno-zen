@@ -1,5 +1,12 @@
 <nav class="navigation left">
   <ul class="links">
+
+      <!-- need this specific anchor id to trigger jquery method to transition to blog -->
+      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} {{#is "home"}}nav-current{{/is}}">
+        <a id="blog-link" href="http://www.crutchfield.io/#open">Blog</a>
+      </li>
+
+
     {{#foreach navigation}}
       <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} {{#is "home"}}nav-current{{/is}}">
         <a href="{{url absolute="true"}}">{{label}}</a>

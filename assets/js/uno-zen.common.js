@@ -889,6 +889,10 @@ var InstantClick = function(t, e) {
                     if (Uno.is("page", "home")) return t.preventDefault(), location.hash = "" === location.hash ? "#open" : "", Uno.is("device", "desktop") ? e({
                         form: "toggle"
                     }) : $("#menu-button").trigger("click")
+                }), $(window.open_button + ", #blog-link").click(function(t) {
+                    if (Uno.is("page", "home")) return t.preventDefault(), location.hash = "" === location.hash ? "#open" : "", Uno.is("device", "desktop") ? e({
+                        form: "toggle"
+                    }) : $("#menu-button").trigger("click")
                 }), Uno.is("device", "desktop") && Uno.is("page", "home") && (t(), "#open" !== location.hash)) return e({
                 form: "hide"
             })
